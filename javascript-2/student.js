@@ -26,8 +26,7 @@ var phrase = ''
 
 if (lovesCode = true){
     return 'I love code'
-}
-else{
+}else{
 return 'I do not love to code'
 }
 

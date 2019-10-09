@@ -1,0 +1,108 @@
+body{
+margin: 0;
+}
+
+header{
+    background-color: gray;
+    height: 9vh;
+    width: 100vw;
+}
+
+h1{
+    color: white;
+}
+
+li{
+    display: inline;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    float: right;
+    color: white;
+    background-color: gray;
+}
+
+.middle{
+    background-color: black;
+    width: 100vw;
+    height: 30vh;
+    padding-bottom: 1rem;
+    /* display: inline-flex; */
+}
+
+.middletext {
+    color: yellow;
+  display: inline-flex;
+  text-align: center;
+  padding-left: 8rem;
+  padding-bottom: 1rem;
+}
+
+.box1{
+background-color: aquamarine;
+height: 15vh;
+width: 15vw; 
+padding-top: 3rem;
+padding-left: 3rem;
+margin: 4rem;
+flex-direction: row;
+display: flex;
+display: inline-block
+}
+
+.box2{
+background-color: aquamarine;
+height: 15vh;
+width: 15vw;
+padding-top: 3rem;
+padding-left: 3rem;
+margin: 4rem;
+flex-direction: row;
+display: flex;
+display: inline-block;
+}
+
+.box3{
+background-color: aquamarine;
+height: 15vh;
+width: 15vw;
+padding-top: 3rem;
+padding-left: 3rem;
+margin: 4rem;
+flex-direction: row;
+display: flex;
+display: inline-block
+}
+
+.square1{
+background-color: salmon;
+height: 15vh;
+width: 25vw;
+padding-left: 3rem;
+padding-right: 3rem;
+margin: 4rem;
+flex-direction: row;
+display: flex;
+display: inline-block
+}
+
+div{
+    flex-direction: column-reverse;
+}
+
+.square{
+width: 30vw;
+height: 25vh;
+background-color: salmon;
+margin: 2rem;
+display: inline-block;
+padding-left: 3rem;
+}
+
+
+
+img {
+    float: right;
+    height: 200px;
+    width: auto;
+    margin: 2rem;
+}

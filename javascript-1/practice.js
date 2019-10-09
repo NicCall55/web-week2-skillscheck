@@ -41,7 +41,13 @@ function lovesCodeChecker(x){
 
 // Create a function called 'oddChecker' that takes in one parameter, num. Check to see if the number is even or odd. If it is odd, return 'the number is odd' or return 'the number is even' if it is even.
 
-
+function oddChecker(num){
+	if(num %2 === 1){
+		return 'the number is odd'
+	}else{
+		return 'the number is even'
+	}
+}
 
 //////////////////PROBLEM 7////////////////////
 
@@ -56,47 +62,56 @@ function iLove(name, love){
 // Create a copy of the faveColors array called 'colorCopy' using slice
 const faveColors = ['red', 'green', 'black']
 
-// let colorCopy = (red, green, black)
+let colorCopy = faveColors.slice(0)
 
 //////////////////PROBLEM 9////////////////////
 
 // Add a fourth color to the end of the 'colorCopy' array using push
 
-// add.push(blue)
+colorCopy.push('blue')
 
 //////////////////PROBLEM 10////////////////////
 
 // Create a new array called 'middleNums' from the numbers array that will capture only the middle numbers (2, 3, 4).
 const numbers = [1, 2, 3, 4, 5]
 
-// middleNums ={}
+middleNums =[]
 
 //////////////////PROBLEM 11////////////////////
 
 // Create an object called 'me' that has these keys with the correct values: firstName, state, age, greeter. firstName will be your name as a string. state will be your current state or providence as a string. age will be your age as a number. greeter will be a method that returns the string 'Hello! My name is NAMEVALUE and I live in STATEVALUE' with the correct values
 
-// let me = {
-// 	firstName = 'nic',
-// 	state = 'utah', 
-// 	age = 19
-// 	}
+let me = {
+	firstName:'nic',
+	state: 'utah', 
+	age: 19
+	}
  me.greeter = `Hello! My name is ${firstName} and I live in ${state}`
 //////////////////PROBLEM 12////////////////////
 
 // Create a function called 'bigOrSmall' that takes in one parameter, arr. Create a new array inside of bigOrSmall called 'answers'. Loop over the passed in arr param. If the number is GREATER than 100, push 'big' as a string to the answers array. If the number is LESS than or EQUAL to 100, push 'small' as a string to the answers array. Return the answers array inside of the function
 
-function bigOrSmall(arr,[answers]){
-
+function bigOrSmall(arr){
+let answers = []
+for(let i = 0; i < arr.length; i++){
+	if(arr[i] > 100){
+		answers.push('big')
+	}
+	else if(arr[i] <= 100){
+		answers.push('small')
+	}
+} return answers
 }
 //////////////////PROBLEM 13////////////////////
 
 // Create a function called 'arrayReverser' that takes in one parameter, arr. Inside of arrayReverser, create an empty array called 'reversed'. Using a for loop, loop over the passed in array in reverse and add each item to the new reversed array. Finally, return the new reversed array
-
-// function arrayReverser(arr, reversed){
-// for(let i = reversed.length -1; i >= 0;  i --)
-
-// }
-
+//  function arrayReverser(arr){
+// 	 let reversed = []
+// 	 for(let i = arr.length -1; i>= 0; 1--){
+// 		 reversed.push(arr[i])
+// 	 }
+// 	 return reversed
+//  }
 //////////////////PROBLEM 14 - 18 Setup////////////////////
 
 // Below is an array, myNumbers. We will be using .map, .filter, .reduce and .forEach to manipulate the array in some form

@@ -23,12 +23,12 @@ let faveColors = ['yellow', 'blue', 'green']
 
 // CODE HERE
 let me = {
-    firstname: 'Frank',
+    firstName: 'Frank',
     superHeroName: '00.5',
     homeTown: 'american fork',
     superPowers: 'eagle scout', 'served a mission in mexico', 'i used to own a gti',
-    superPowerXP: 
-    profileImage: 
+    superPowerXP: Math.floor(Math.random() * 100) + 1,
+    profileImage:  `https://randomuser.me/api/portraits/med/lego/${Math.floor(Math.random() * 10) + 1 }.jpg`
 }
 
 //////////////////Step 3////////////////////
@@ -42,12 +42,22 @@ let me = {
 // Next, create a for loop to loop over the array. If any of the colors you chose is 'blue', change it's value to '#4D4DFF' which is just a more appealing color of blue. Outside of the for loop but still inside of setColor, invoke the function called background which will take in three arguments. These arguments should be each item of your array. This is a function we created for you to set the background colors.
 
 // CODE HERE
-
+function setColor(arr){
+    faveColors.splice(1,2,3)
+    if(faveColors === 'blue'){
+        return faveColors.blue === '#4D4DFF'
+    }
+}
 //////////////////Step 5////////////////////
 //Create a function called 'setPowers' that takes in arr as a parameter. Loop over the arr param and run a function called createLi(), which will take each item of the array as an agument. The createLi function is a function we created to set the data on the screen. It outside the scope of this project
 
 // CODE HERE
+function setPowers(arr){
+    for(i = 0; i < arr.length; i++){
 
+    }
+    function createLi()
+}
 
 //////////////////Step 6////////////////////
 //Lastly, create a function called redactInfo that will take in an obj as a paramter. Let's imagine our super hero needs to go undercover and we need to remove all info about them. That is what this function will do. Loop over the object and change each keys value to 'redacted'. Outside of the loop but still in the redactInfo function, run the function redacted() which is a function we created that will update the text on the screen.
